@@ -12,17 +12,7 @@ function createRows(ufoReport){
 data.forEach(ufoReport => {
     createRows(ufoReport)});
     
-// // event handler
-// d3.selectAll("body").on("change", updateInfo);
-// function updateInfo() {
-//     let dropdownMenu = d3.selectAll(".table-head").node();
-//     let dropdownMenuValue= dropdownMenu.property("datetime");
-//     // let selectedData= dropdownMenu.value;
-//     console.log(dropdownMenuValue);
-//     // console.log(selectedData);
-// }
-
-let ufo = data;
+// let ufo = data;
 // Select the button
 let button = d3.select("#filter-btn");
 // Select the form
@@ -39,13 +29,13 @@ function runEnter() {
   // Get the value property of the input element
   let inputValue = inputElement.property("value");
   console.log(inputValue);
-//   console.log(ufo);
-  let filteredData = ufo.filter(object => {
+//   console.log(data);
+  let filteredData = data.filter(object => {
     object.datetime === inputValue;});
-    console.log(filteredData)
-filteredData.forEach(ufoReport => {
-    createRows(ufoReport)});
-};
+    console.log(filteredData);
+    filteredData.forEach(ufoReport => {createRows(ufoReport)});
+  };
+
 
 // d3.selectAll("body").on("change", updateInfo);
 //     function updateInfo() {tbody.
@@ -55,7 +45,7 @@ filteredData.forEach(ufoReport => {
 //     let output= "";
 //     switch (column) {
 //         case "date":
-//             output= Object.entries(data).forEach(([Key,value])=> {
+//             output= filteredData.forEach(([Key,value])=> {
 //                 console.log(key, value);
 //             break;
 //         case "city":
