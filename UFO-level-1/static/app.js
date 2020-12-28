@@ -49,19 +49,19 @@ function runEnter() {
 //                 console.log(key, value);
 //             break;
 //         case "city":
-//             output= Object.entries(data).forEach(([Key,value])=> {
+//             output= filteredData.forEach(([Key,value])=> {
 //                 console.log(key, value);
 //             break;
 //         case "state":
-//             output= Object.entries(data).forEach(([Key,value])=> {
+//             output= filteredData.forEach(([Key,value])=> {
 //                 console.log(key, value);
 //             break;
 //         case "country":
-//             output= Object.entries(data).forEach(([Key,value])=> {
+//             output= filteredData.forEach(([Key,value])=> {
 //                 console.log(key, value);
 //             break;
 //         case "shape":
-//             output= Object.entries(data).forEach(([Key,value])=> {
+//             output= filteredData.forEach(([Key,value])=> {
 //                 console.log(key, value);
             
 //     };
