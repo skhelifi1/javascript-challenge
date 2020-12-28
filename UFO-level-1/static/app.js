@@ -26,6 +26,7 @@ function runEnter() {
   d3.event.preventDefault();
 // Select the input element and get the raw HTML node
   let inputElement = d3.select("#datetime");
+//   let filteredTable= d3.select("#ufo-table");
   // Get the value property of the input element
   let inputValue = inputElement.property("value");
   console.log(inputValue);
@@ -37,8 +38,7 @@ function runEnter() {
   };
 
 
-// d3.selectAll("body").on("change", updateInfo);
-//     function updateInfo() {tbody.
+
 // };
 // d3.selectAll("body").on("change", filterOption);
 // funtion filterOption(column) {
