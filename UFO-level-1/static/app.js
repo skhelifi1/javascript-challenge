@@ -16,7 +16,7 @@ data.forEach(ufoReport => {
 // Select the button
 let button = d3.select("#filter-btn");
 // Select the form
-let form = d3.select("form");
+let form = d3.select("#filters");
 // Create event handlers 
 button.on("click", runEnter);
 form.on("submit", runEnter);
